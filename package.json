@@ -1,0 +1,10 @@
+{
+  "name": "mbti-server",
+  "version": "1.0.0",
+  "description": "mbti server for rudals",
+  "main": "app.ts",
+  "repository": "https://github.com/gtg7784/mbti-server",
+  "author": "gtg7784 <tae.gun7784@gmail.com>",
+  "license": "MIT",
+  "private": false
+}

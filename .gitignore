@@ -5,7 +5,11 @@ build
 events
 dist
 
+# Visual Studio Code
 .vscode
+
+# Serverless Offline
+.build
 
 # Created by https://www.gitignore.io/api/osx,node,linux,windows
 

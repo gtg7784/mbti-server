@@ -1,0 +1,32 @@
+{
+  "name": "mbti",
+  "version": "1.0.0",
+  "description": "MBTI Serverless RESTful API with AWS Lambda",
+  "main": "src/handler.ts",
+  "repository": "https://github.com/gtg7784/mbti-server/",
+  "author": "gtg7784 <tae.gun7784@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "aws-lambda": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.70",
+    "@types/chai": "^4.2.14",
+    "@types/faker": "^5.1.5",
+    "@types/mocha": "^8.2.0",
+    "@types/request": "^2.48.5",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "faker": "^5.1.0",
+    "mocha": "^8.2.1",
+    "serverless-offline": "^6.8.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^4.1.3"
+  }
+}

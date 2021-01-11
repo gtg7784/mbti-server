@@ -20,14 +20,16 @@ service: mbti
 # Check out our docs for more details
 frameworkVersion: '2'
 
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+
 provider:
   name: aws
   runtime: nodejs12.x
   lambdaHashingVersion: 20201221
-
-# you can overwrite defaults here
-#  stage: dev
-#  region: us-east-1
+  stage: dev
+  region: ap-northeast-2 # Seoul
 
 # you can add statements to the Lambda function's IAM Role here
 #  iamRoleStatements:
@@ -60,7 +62,12 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/handler.hello
+
+    events:
+      - http:
+          path: hello
+          method: get
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
